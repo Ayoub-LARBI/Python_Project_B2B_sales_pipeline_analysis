@@ -47,23 +47,23 @@ The sales team has 8,800 recorded opportunities but no clear read on *why* deals
 
 **Won revenue by product**
 
-![Won revenue by product](visuals\1_Won_revenue_by_product.png)
+![Won revenue by product](visuals/1_Won_revenue_by_product.png)
 
 **Win rate by sales-cycle threshold**
 
-![Win rate by threshold](visuals\2_Win_rate_by_sales_cycle_threshold.png)
+![Win rate by threshold](visuals/2_Win_rate_by_sales_cycle_threshold.png)
 
 **Agent win rate: overall vs. GTX Basic only**
 
-![Agent ranking scramble](visuals\3_Agent_win_rate_overall_vs_GTX_Basic_only.png)
+![Agent ranking scramble](visuals/3_Agent_win_rate_overall_vs_GTX_Basic_only.png)
 
 **Stalled pipeline exposure by product**
 
-![Stalled exposure by product](visuals\4_Stalled_Pipeline_Exposure_by_Product.png)
+![Stalled exposure by product](visuals/4_Stalled_Pipeline_Exposure_by_Product.png)
 
 **GTX Pro win rate by sector**
 
-![GTX Pro win rate by sector](visuals\5_GTX Pro_win_rate_by_sector.png)
+![GTX Pro win rate by sector](visuals/5_GTX Pro_win_rate_by_sector.png)
 
 ## ✅ Recommendations
 

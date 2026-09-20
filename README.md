@@ -63,7 +63,7 @@ The sales team has 8,800 recorded opportunities but no clear read on *why* deals
 
 **GTX Pro win rate by sector**
 
-![GTX Pro win rate by sector](visuals/5_GTX Pro_win_rate_by_sector.png)
+![GTX Pro win rate by sector](visuals/5_GTX_Pro_win_rate_by_sector.png)
 
 ## ✅ Recommendations
 

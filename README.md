@@ -2,7 +2,7 @@
 
 **Business question:** Why are sales opportunities being won or lost, and where might the company be leaving revenue on the table? 💡
 
-**Dataset:** [Maven Analytics CRM Sales Opportunities](https://mavenanalytics.io/) — ~8,800 B2B hardware sales opportunities across four tables (`sales_pipeline`, `accounts`, `products`, `sales_teams`).
+**Dataset:** [Maven Analytics CRM Sales Opportunities](https://mavenanalytics.io/) ~8,800 B2B hardware sales opportunities across four tables (`sales_pipeline`, `accounts`, `products`, `sales_teams`).
 
 **Tools:** Python (Pandas, NumPy, Matplotlib, Seaborn), Jupyter.
 
@@ -22,15 +22,15 @@ The sales team has 8,800 recorded opportunities but no clear read on *why* deals
 
 ## 🛠️ Methodology
 
-- **Win rate** = `Won / (Won + Lost)` — open opportunities excluded, since their outcome isn't known yet.
+- **Win rate** = `Won / (Won + Lost)` open opportunities excluded, since their outcome isn't known yet.
 - **Sales cycle** = `close_date - engage_date`, defined only for closed opportunities.
 - **Grain:** one row = one sales opportunity.
-- Every finding below was stress-tested for an alternative explanation before being accepted — see Sections 9–12 of the notebook for the full reasoning trail (cross-validation, not just description). 🔍
+- Every finding below was stress-tested for an alternative explanation before being accepted, see Sections 9–12 of the notebook for the full reasoning trail (cross-validation, not just description). 🔍
 
 ## 🧹 Data quality
 
 - Missing `close_date`/`close_value` is structural (open deals haven't closed yet), not an error.
-- `Prospecting` deals have no `engage_date` — opportunity age cannot be computed for them; stated as a limitation rather than estimated.
+- `Prospecting` deals have no `engage_date` opportunity age cannot be computed for them; stated as a limitation rather than estimated.
 - Found and fixed a silent product-name mismatch (`'GTXPro'` vs. `'GTX Pro'`) between the pipeline and products tables before it could break any merge. 🐛➡️✅
 
 ## 📈 Key findings
@@ -70,16 +70,16 @@ The sales team has 8,800 recorded opportunities but no clear read on *why* deals
 Each recommendation is tied to a specific finding, with its limitation stated alongside it — no action goes beyond what the data supports.
 
 1. **Sales-cycle signal:** Prioritize follow-up calls on deals past day 14; use them to surface what's driving continued buyer interest.
-2. **Revenue concentration:** When agents must choose where to spend limited time among similarly-likely deals, prioritize the top three revenue-generating products — same conversion odds, far higher payoff per win.
-3. **Agent performance:** Before reassigning agents by "best product," recompute per-agent, per-product win rates on adequate sample sizes — a raw leaderboard is not a fair comparison.
-4. **Stalled pipeline:** Trigger a proactive check-in call for deals past the historical max winning cycle; the call — not the day count alone — decides whether to re-engage or close.
+2. **Revenue concentration:** When agents must choose where to spend limited time among similarly-likely deals, prioritize the top three revenue-generating products same conversion odds, far higher payoff per win.
+3. **Agent performance:** Before reassigning agents by "best product," recompute per-agent, per-product win rates on adequate sample sizes a raw leaderboard is not a fair comparison.
+4. **Stalled pipeline:** Trigger a proactive check-in call for deals past the historical max winning cycle; the call not the day count alone decides whether to re-engage or close.
 5. **Sector effect:** Once sample sizes are confirmed adequate, prioritize sales effort in higher-performing sectors for the affected product line.
 
 ## ⚠️ Limitations
 
-- Revenue ≠ profit — no cost data exists, so findings describe "highest-revenue," never "most profitable."
+- Revenue ≠ profit no cost data exists, so findings describe "highest-revenue," never "most profitable."
 - Sales-cycle findings describe *completed* cycles only; they cannot predict the outcome of a currently-open short-cycle deal.
-- Exposure estimates use list price as a stand-in for close value — not a revenue forecast.
+- Exposure estimates use list price as a stand-in for close value not a revenue forecast.
 - Several sub-group comparisons (sector × product, agent × product) rely on modest sample sizes; each finding above states where that applies.
 
 ## 📂 Repo structure

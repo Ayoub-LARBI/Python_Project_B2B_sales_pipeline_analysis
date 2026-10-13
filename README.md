@@ -41,7 +41,7 @@ The sales team has 8,800 recorded opportunities but no clear read on *why* deals
 | 2 | 3 of 7 products generate 83.5% of Won revenue | Revenue decomposed into volume × deal size; win rates cluster 60–65% | Confirmed via decomposition, not assumption |
 | 3 | Overall agent rankings are confounded by product mix | Agent win rate recomputed within one product (GTX Basic) | Ranking scrambles when product is held fixed |
 | 4 | 81% of open "Engaging" deals have exceeded the longest-ever winning cycle | $949,737 in estimated exposure, concentrated in one product | Confirmed on a large, reliable sample (excluded a small-sample false positive) |
-| 5 | Sector appears to have little effect on win rate overall | Win rate within one product (GTX Pro) swings 54.5% → 71.9% by sector | Confirmed once product mix is held fixed |
+| 5 | Sector effect depends on product: small overall, but GTX Pro win rate ranges 54.5% to 71.9% by sector | Win rate within one product (GTX Pro) swings 54.5% → 71.9% by sector | Confirmed once product mix is held fixed |
 
 ### 🖼️ Visuals
 

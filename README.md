@@ -43,6 +43,8 @@ The sales team has 8,800 recorded opportunities but no clear read on *why* deals
 | 4 | 81% of open "Engaging" deals have exceeded the longest-ever winning cycle | $949,737 in estimated exposure, concentrated in one product | Confirmed on a large, reliable sample (excluded a small-sample false positive) |
 | 5 | Sector effect depends on product: small overall, but GTX Pro win rate ranges 54.5% to 71.9% by sector | Win rate within one product (GTX Pro) swings 54.5% → 71.9% by sector | Confirmed once product mix is held fixed |
 
+Finding 1 was tested with a two-proportion z-test: z = −11.03, p < 0.001, 95% CI for the gap 10.8 to 15.5 pp. The 14-day cut-off was chosen after comparing 7 thresholds, so the p-value is optimistic.
+
 ### 🖼️ Visuals
 
 **Won revenue by product**
